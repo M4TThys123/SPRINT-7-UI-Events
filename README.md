@@ -1,5 +1,3 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
-
 # Titel
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
@@ -10,6 +8,9 @@
 ## Experimenten
 <!-- In de Experimenten beschrijf je wat je per experimnet hebt gedaan en documenteer je de code aan de hand van voorbeelden -->
 <!-- Voeg een mooie poster visual toe 📸 per experiment -->
+
+## Papieren schetsen
+![Wireflow](https://github.com/M4TThys123/SPRINT-7-UI-Events/blob/main/assets/ui-states.JPG)
 
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
