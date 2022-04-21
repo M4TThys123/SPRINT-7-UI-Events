@@ -1,16 +1,46 @@
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+# UI Events
+![Wireflow](https://github.com/M4TThys123/SPRINT-7-UI-Events/blob/main/assets/ui-states.JPG)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Gedurende deze opdracht heb ik geleerd hoe je verschillende eventListeners kan gebruiken voor UI interacties met de gebruiker.
 
-## Experimenten
-<!-- In de Experimenten beschrijf je wat je per experimnet hebt gedaan en documenteer je de code aan de hand van voorbeelden -->
-<!-- Voeg een mooie poster visual toe 📸 per experiment -->
+## JavaScript code:
+```javascript
 
-## Papieren schetsen
-![Wireflow](https://github.com/M4TThys123/SPRINT-7-UI-Events/blob/main/assets/ui-states.JPG)
+// Define Elements
+const buttons = document.querySelectorAll('a');
+let mousedownTimer;
+
+// Loop trough all buttons
+buttons.forEach(button => {
+
+    // Add single click event listener
+    button.addEventListener('click', function() {
+        button.classList.add('color-green');  
+    });
+
+    // Add double click event listener
+    button.addEventListener('dblclick', function() { 
+        button.classList.add('color-purple');
+    });
+
+    // Add keydown event listener
+    button.addEventListener('keydown', function(e) {
+        if (e.code == 'KeyZ') {
+            button.classList.add('color-lightpurple');
+        }
+     });
+
+    // Add mousedown event listener
+     button.addEventListener('mousedown', function() {
+         mousedownTimer = setTimeout(() => {
+            button.classList.add('color-green')
+     }, 1500);
+    });
+})
+```
+
+
 
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
